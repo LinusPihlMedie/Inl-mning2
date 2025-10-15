@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Caerphilly Accounting</title>
+    <link rel="stylesheet" href="headerFooter.css" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-nav-left">
+        <a href="index.html">
+          <img src="WESITE IMAGES/LOGO_NAME.png" alt="LOGO_NAME" />
+        </a>
+      </div>
+
+      <!-- Desktop nav (kept for desktop) -->
+      <nav class="header-nav-right" aria-label="Main navigation">
+        <div class="header-nav-rightBtn">
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="header-startupPackageBtn">
+          <a href="business-startup-package.html">Startup Package</a>
+        </div>
+      </nav>
+
+      <!-- Mobile burger button -->
+      <button class="mobile-menu-btn" aria-label="Open menu" id="mobileMenuBtn">
+        <!-- simple hamburger icon -->
+        <svg
+          viewBox="0 0 24 24"
+          width="28"
+          height="28"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 6h18M3 12h18M3 18h18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </header>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true">
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Close menu"
+      >
+        ✕
+      </button>
+
+      <div class="mobile-menu-content" role="menu" aria-label="Mobile menu">
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <div class="header-startupPackageBtn mobile-startup">
+          <a href="business-startup-package.html">Startup Package</a>
+        </div>
+      </div>
+    </div>
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+      <h1>Our Services</h1>
+      <div class="services-preview-cards">
+        <div class="preview-card">
+          <h2>VAT RETURNS</h2>
+          <p>
+            Complete VAT service from registration to submission. Expert
+            handling of your VAT obligations with peace of mind.
+          </p>
+          <a href="#vat-full" class="read-more-btn">Read More</a>
+        </div>
+
+        <div class="preview-card">
+          <h2>BOOKKEEPING</h2>
+          <p>
+            Professional bookkeeping services to keep your finances organized
+            and compliant. Focus on your business while we handle the numbers.
+          </p>
+          <a href="#bookkeeping-full" class="read-more-btn">Read More</a>
+        </div>
+
+        <div class="preview-card">
+          <h2>BUSINESS PLANS</h2>
+          <p>
+            Customized business plans for startups, funding applications, and
+            growth ventures with detailed financial projections.
+          </p>
+          <a href="#business-plans-full" class="read-more-btn">Read More</a>
+        </div>
+
+        <div class="preview-card">
+          <h2>PAYROLL</h2>
+          <p>
+            Comprehensive RTI compliant payroll management for businesses of all
+            sizes. Accurate and timely payroll processing.
+          </p>
+          <a href="#payroll-full" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Services Section -->
+    <section class="full-services">
+      <h1>Detailed Services</h1>
+      <div class="full-service-cards">
+        <div id="vat-full" class="full-service-card">
+          <h2>VAT RETURNS</h2>
+          <p>
+            The complete VAT Returns service, includes everything you need from
+            registration to submission.
+          </p>
+          <p>
+            You will need to file VAT Returns and/or register for VAT if your
+            turnover is more than the current specified VAT threshold. Some
+            businesses may choose to register for VAT voluntarily. However,
+            making this business decision can become confusing. We can offer you
+            advice regarding VAT, tailored to your needs.
+          </p>
+          <p>
+            If your VAT returns are straightforward, then it is more cost
+            effective to complete them yourself. However, online VAT returns are
+            not as simplistic as you may think. If you are using an online
+            accounts software, chances are you could be entitled to a VAT
+            refund, and this can be very complex. Outsourcing your VAT returns
+            to us will give you peace of mind.
+          </p>
+          <p>
+            We will check your bookkeeping, ensuring that there are no
+            discrepancies, because having discrepancies will render your VAT
+            return incorrect. Once we are confident that your bookkeeping is
+            correct, we will send the figures to you for review. When you revert
+            back to us confirming that you are happy for us to submit the VAT
+            Return, we will file your VAT returns to HMRC.
+          </p>
+          <p>
+            We will also make you aware if your business will exceed the VAT
+            threshold, allowing sufficient time for you to take action.
+          </p>
+          <p>
+            Another advantage of using our service is in the event of a VAT
+            inspection. HMRC launch investigations into the VAT affairs of
+            businesses at random or as a result of inconsistently submitted
+            figures. By appointing us as your Accountant to process your VAT
+            returns, you can have the peace of mind that the figures submitted
+            to HMRC are accurate.
+          </p>
+          <p>
+            If you would like us to act on your behalf for VAT and submit your
+            VAT Returns, please contact us. All our fees are agreed at the
+            initial consultation before any work is conducted.
+          </p>
+        </div>
+
+        <div id="bookkeeping-full" class="full-service-card">
+          <h2>BOOKKEEPING</h2>
+          <p>
+            At Caerphilly Accounting, we understand that managing your
+            business's finances can be overwhelming. That's why we're here to
+            take the hassle out of sorting through your invoices, receipts, and
+            bank statements for bookkeeping. With our expert team and
+            streamlined processes, you can focus on what you do best – running
+            your business.
+          </p>
+          <p><strong>Our Services:</strong></p>
+          <ul>
+            <li>
+              <strong>Bookkeeping:</strong> Let us handle the day-to-day
+              recording of your financial transactions, ensuring accuracy and
+              compliance with relevant regulations.
+            </li>
+            <li>
+              <strong>Invoice Management:</strong> We'll organise and process
+              your invoices promptly, helping you stay on top of your accounts
+              payable and receivable.
+            </li>
+            <li>
+              <strong>Receipt Organisation:</strong> Say goodbye to the headache
+              of sorting through piles of receipts. We'll categorise and file
+              them efficiently for easy access when needed.
+            </li>
+            <li>
+              <strong>Bank Statement Reconciliation:</strong> Our team will
+              reconcile your bank statements with your accounting records,
+              identifying any discrepancies and ensuring your financial data is
+              up-to-date.
+            </li>
+          </ul>
+          <p><strong>Why Choose Us:</strong></p>
+          <ul>
+            <li>
+              <strong>Expertise:</strong> Our team consists of experienced
+              professionals with a deep understanding of accounting principles
+              and practices.
+            </li>
+            <li>
+              <strong>Reliability:</strong> You can trust us to handle your
+              financial data with the utmost care and confidentiality.
+            </li>
+            <li>
+              <strong>Efficiency:</strong> We leverage technology and efficient
+              processes to streamline your bookkeeping tasks, saving you time
+              and effort.
+            </li>
+            <li>
+              <strong>Customised Solutions:</strong> We tailor our services to
+              meet the specific needs of your business, ensuring you get the
+              support you require.
+            </li>
+          </ul>
+          <p><strong>Get Started Today:</strong></p>
+          <p>
+            Don't let bookkeeping tasks bog you down any longer. Partner with
+            Caerphilly Accounting and experience the peace of mind that comes
+            with knowing your finances are in capable hands. Contact us today to
+            learn more about our services and how we can support your business's
+            success.
+          </p>
+        </div>
+
+        <div id="business-plans-full" class="full-service-card">
+          <h2>BUSINESS PLANS</h2>
+          <p>
+            We create formal statements of business goals, detailing reasons why
+            they are attainable and offer plans for achieving them. Our business
+            plans are customised, professionally written and bespoken, as we
+            collate background information about you and your business at our
+            initial meeting, and through the creative process. Creating business
+            plans in this way allows you to understand your business and your
+            options for future development.
+          </p>
+          <p>
+            We specialise in creating business plans for start-ups, funding
+            applications, and growth ventures.
+          </p>
+          <p>
+            Our business plans are delivered complete with two years detailed
+            profit and loss, cash-flow and management information analysis.
+          </p>
+          <p>
+            A business plan created by us will be designed specifically for the
+            intended audience, whether a lender or an investor. The business
+            plan will include the following:
+          </p>
+          <ul>
+            <li>Business Background and History</li>
+            <li>Business Objectives</li>
+            <li>SWOT Analysis</li>
+            <li>Market Analysis</li>
+            <li>Financial Information for 2 years</li>
+            <li>Full Narrative, Charts, and Graphics</li>
+            <li>Contingency and Legal Planning</li>
+          </ul>
+          <p>
+            All the information we use to create your business plan is dynamic;
+            therefore as your business develops, our business plans are adjusted
+            to meet their intended audience. Once completed, clarifications,
+            alterations, and corrections are free of charge for a period of 30
+            days after delivery of the initial completed plan.
+          </p>
+        </div>
+
+        <div id="payroll-full" class="full-service-card">
+          <h2>PAYROLL</h2>
+          <p>
+            We offer a comprehensive payroll management service that is Real
+            Time Information (RTI) compliant, for a range of business structures
+            using payroll software recognised by HMRC. Outsourcing your payroll
+            to us is a risk-free solution as we are reliable and accurate in the
+            figures we submit to HMRC.
+          </p>
+          <p>
+            If you require payroll for the first time but are not in a position
+            to run it yourself, or would prefer that it was handled by an
+            expert. We will manage the set-up of your PAYE scheme, and update
+            you on the required payments due to staff and HMRC. There is no
+            minimum requirement for our payroll service, so if your payroll
+            consists of only 1 to 2 employees, we will be happy to fulfil your
+            needs.
+          </p>
+          <p>
+            Appointing us to manage your payroll is guaranteed to be a smooth
+            transition, so you can be confident that your staff are paid on
+            time, including those members of staff who are paid weekly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-card-1">
+        <div class="caBild">
+          <img src="WESITE IMAGES/LOGO_NAME.png" alt="" />
+        </div>
+        <p>Caerphilly Accounting <br />@ copyright 2016-2024</p>
+        <p>
+          Caerphilly Accounting is a trading name <br />of JJBS Bookkeeping
+          Solutions Ltd.
+        </p>
+        <p>Registered in England & Wales <br />Company Number: 9862331</p>
+      </div>
+      <div class="footer-card-2">
+        <h2>Registered Address</h2>
+        <div class="ra">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+            />
+          </svg>
+          <p>
+            32 Tridwr Road <br />Abertridwr <br />CAERPHILLY <br />Gwent
+            <br />CF83 4DN
+          </p>
+        </div>
+      </div>
+      <div class="footer-card-3">
+        <h2>Quick Links</h2>
+        <a href="privacyPolicy.html">Privacy Policy</a>
+        <a href="termsOfWebsiteUse.html">Terms Of Website Use</a>
+        <h2>Contact</h2>
+        <div class="phone">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+            />
+          </svg>
+          <p>07494 336569</p>
+        </div>
+        <div class="gmail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 14h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+          <p>info@caerphillyaccounting.co.uk</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Simple animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll(".preview-card").forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
+    <script src="menudrop.js"></script>
+  </body>
+</html>

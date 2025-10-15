@@ -1,0 +1,451 @@
+
+      :root {
+        --color-primary: #8ecae6;
+        --color-primary-dark: #219ebc;
+        --color-secondary: #023047;
+        --color-accent: #ffb703;
+        --color-accent-dark: #fb8500;
+        --color-bg: #ffffff;
+        --color-bg-alt: #f7f9f9;
+        --color-text: #333333;
+        --color-subtext: #666666;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: var(--color-bg);
+        color: var(--color-text);
+        overflow-x: hidden;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      [id] {
+        scroll-margin-top: 120px;
+      }
+
+    
+      .content-wrapper {
+        display: flex;
+        flex: 1;
+      }
+
+     
+      .sidebar {
+        align-self: flex-start;
+        margin-bottom: 3rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 280px;
+        background: linear-gradient(
+          135deg,
+          var(--color-secondary),
+          var(--color-primary-dark)
+        );
+        color: var(--color-bg);
+        padding: 2rem 0;
+        overflow-y: visible;
+        box-shadow: 3px 0 15px rgba(2, 48, 71, 0.3);
+      }
+
+      .sidebar-header {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        border-bottom: 1px solid rgba(142, 202, 230, 0.3);
+        margin-bottom: 1.5rem;
+      }
+
+      .sidebar-header h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        color: var(--color-bg);
+        margin-bottom: 0.5rem;
+      }
+
+      .sidebar-header p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .nav-links {
+        list-style: none;
+        padding: 0 1rem;
+      }
+
+      .nav-links li {
+        margin-bottom: 0.3rem;
+      }
+
+      .nav-links a {
+        color: var(--color-bg);
+        text-decoration: none;
+        padding: 0.8rem 1rem;
+        display: block;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .nav-links a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: var(--color-accent);
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        background: rgba(142, 202, 230, 0.2);
+        transform: translateX(5px);
+      }
+
+      .nav-links a:hover::before {
+        transform: scaleY(1);
+      }
+
+      .nav-links a.active {
+        background: rgba(142, 202, 230, 0.3);
+        font-weight: 500;
+      }
+
+      .nav-links a.active::before {
+        transform: scaleY(1);
+      }
+
+      .nav-h1 {
+        font-weight: 600;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(142, 202, 230, 0.2);
+        margin: 1rem 0 0.5rem 0;
+        padding-bottom: 0.5rem;
+      }
+
+      .nav-h2 {
+        padding-left: 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .nav-h3 {
+        padding-left: 2.5rem;
+        font-size: 0.85rem;
+        opacity: 0.9;
+      }
+
+     
+      .main-content {
+        flex: 1;
+        padding: 2rem;
+      }
+
+      .terms-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .terms-header {
+        position: relative;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--color-secondary);
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-primary-dark)
+        );
+        padding: 4rem 2rem;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(33, 158, 188, 0.3);
+      }
+
+      
+      .terms-header .termsBG {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 33%;
+        opacity: 0.18;
+        z-index: 0;
+        mix-blend-mode: overlay;
+        pointer-events: none;
+        filter: saturate(0.9);
+      }
+
+      
+      .terms-header-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .terms-header-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .terms-header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .terms-header p {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 800px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .terms-content {
+        background: var(--color-bg-alt);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
+      }
+
+      .terms-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .terms-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .terms-section h2 {
+        font-family: "Playfair Display", serif;
+        color: var(--color-primary-dark);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+      }
+
+      .terms-section h3 {
+        color: var(--color-secondary);
+        font-size: 1.3rem;
+        margin: 1.5rem 0 1rem 0;
+      }
+
+      .terms-section p {
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        color: var(--color-text);
+      }
+
+      .terms-section ul {
+        margin: 1rem 0;
+        padding-left: 2rem;
+      }
+
+      .terms-section li {
+        margin-bottom: 0.8rem;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        background: linear-gradient(
+          120deg,
+          rgba(142, 202, 230, 0.1),
+          rgba(251, 133, 0, 0.1)
+        );
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 4px solid var(--color-accent);
+        margin: 1.5rem 0;
+      }
+
+      .highlight p {
+        margin: 0;
+        font-style: italic;
+        color: var(--color-secondary);
+      }
+
+      h1,
+      h2,
+      h3 {
+        position: relative;
+        display: inline-block;
+      }
+
+      h1::after,
+      h2::after,
+      h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0%;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-accent), transparent);
+        border-radius: 2px;
+      }
+
+     /* ===== Responsive Layout ===== */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(2, 48, 71, 0.2);
+  }
+
+  .main-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .terms-header {
+    padding: 3rem 1.5rem;
+  }
+
+  .terms-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .terms-header p {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .terms-content {
+    padding: 2rem;
+  }
+
+  .highlight {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .sidebar-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .terms-header h1 {
+    font-size: 2rem;
+  }
+
+  .terms-header p {
+    font-size: 1rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .terms-section p,
+  .terms-section li {
+    font-size: 0.95rem;
+  }
+
+  .highlight p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-header {
+    padding: 1rem;
+  }
+
+  .sidebar-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .terms-header {
+    padding: 2rem 1rem;
+  }
+
+  .terms-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .terms-header p {
+    font-size: 0.95rem;
+  }
+
+  .terms-content {
+    padding: 1.5rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1rem;
+  }
+
+  .terms-section p,
+  .terms-section li {
+    font-size: 0.9rem;
+  }
+
+  .highlight {
+    padding: 0.8rem;
+    border-left-width: 3px;
+  }
+
+  .highlight p {
+    font-size: 0.85rem;
+  }
+}
+
+.nav-links a {
+  scroll-behavior: smooth;
+}
+
+
+.sidebar {
+  transition: all 0.3s ease;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+  transform: translateX(3px);
+}

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="headerFooter.css" />
+    <title>Caerphilly Accounting</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-nav-left">
+        <a href="index.html">
+          <img src="WESITE IMAGES/LOGO_NAME.png" alt="LOGO_NAME" />
+        </a>
+      </div>
+
+      <!-- Desktop nav (kept for desktop) -->
+      <nav class="header-nav-right" aria-label="Main navigation">
+        <div class="header-nav-rightBtn">
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="header-startupPackageBtn">
+          <a href="business-startup-package.html">Startup Package</a>
+        </div>
+      </nav>
+
+      <!-- Mobile burger button -->
+      <button class="mobile-menu-btn" aria-label="Open menu" id="mobileMenuBtn">
+        <!-- simple hamburger icon -->
+        <svg
+          viewBox="0 0 24 24"
+          width="28"
+          height="28"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 6h18M3 12h18M3 18h18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </header>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true">
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Close menu"
+      >
+        ✕
+      </button>
+
+      <div class="mobile-menu-content" role="menu" aria-label="Mobile menu">
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <div class="header-startupPackageBtn mobile-startup">
+          <a href="business-startup-package.html">Startup Package</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-1">
+      <img src="WESITE IMAGES/bgCalc.jpg" alt="bgCalc" class="bgCalc" />
+      <div class="card-1-text">
+        <img src="WESITE IMAGES/LOGO.png" alt="" />
+        <h1 class="card-1-Title">Your Trusted Partner in Financial Success</h1>
+        <p class="card-1-text1">
+          Professional accounting services tailored to your specific needs with
+          friendly, independent advice.
+        </p>
+      </div>
+      <div class="card-1-contactCard">
+        <h1>Get In Touch</h1>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="organization">Organization</label>
+            <input
+              type="text"
+              id="organization"
+              class="form-control"
+              placeholder="Enter your organization name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Additional Services (Check all that apply)</label>
+            <div class="checkbox-group">
+              <label>
+                <input
+                  type="checkbox"
+                  name="additionalServices"
+                  value="bookkeeping"
+                />
+                Bookkeeping
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additionalServices"
+                  value="taxreturn"
+                />
+                Tax Return
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additionalServices"
+                  value="businesshelp"
+                />
+                Business Plan
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additionalServices"
+                  value="payroll"
+                />
+                Payroll
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+      </div>
+    </div>
+    <div class="card-2">
+      <div class="card-2-box-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="currentColor"
+          class="bi bi-book"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+          />
+        </svg>
+        <h2>Bookkeeping</h2>
+        <p>
+          At Caerphilly Accounting, we understand that managing your business's
+          finances can be overwhelming. That's why we're here to take the hassle
+          out of sorting through your invoices, receipts, and bank statements
+          for bookkeeping. With our expert team and streamlined processes, you
+          can focus on what you do best – running your business.
+        </p>
+      </div>
+      <div class="card-2-box-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="currentColor"
+          class="bi bi-file-earmark-text"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"
+          />
+          <path
+            d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+          />
+        </svg>
+        <h2>Tax Return</h2>
+        <p>
+          At Caerphilly Accounting, we go beyond basic tax preparation. We're
+          committed to providing you with a comprehensive tax solution that
+          covers all aspects of your tax obligations. Our dedicated team will
+          prepare your main tax return and all supplementary forms with
+          meticulous attention to detail, ensuring accuracy and compliance with
+          the latest tax regulations.
+        </p>
+      </div>
+      <div class="card-2-box-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="currentColor"
+          class="bi bi-paperclip"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z"
+          />
+        </svg>
+        <h2>Business Plan</h2>
+        <p>
+          We create formal statements of business goals, detailing reasons why
+          they are attainable and offer plans for achieving them. Our business
+          plans are customised, professionally written and bespoken, as we
+          collate background information about you and your business at our
+          initial meeting, and through the creative process. Creating business
+          plans in this way allows you to understand your business and your
+          options for future development.
+        </p>
+      </div>
+      <div class="card-2-box-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="currentColor"
+          class="bi bi-cash-coin"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"
+          />
+          <path
+            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"
+          />
+          <path
+            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"
+          />
+          <path
+            d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"
+          />
+        </svg>
+        <h2>Payroll</h2>
+        <p>
+          We offer a comprehensive payroll management service that is Real Time
+          Information (RTI) compliant, for a range of business structures using
+          payroll software recognised by HMRC. Outsourcing your payroll to us is
+          a risk-free solution as we are reliable and accurate in the figures we
+          submit to HMRC.
+        </p>
+      </div>
+    </div>
+    <div class="card-3">
+      <div class="card-3-slider">
+        <div class="card-3-slider-container">
+          <div class="card-3-slide">
+            <div class="card-3-slide-content">
+              <p>
+                Caerphilly Accounting were both professional and extremely
+                helpful in breaking down the terminology & assisting me to
+                manage my account effectively. I cannot praise them enough. I
+                would highly recommend them & would not go anywhere else for my
+                accounting needs.
+              </p>
+              <div class="author">- Mind, Body and Soul in Balance</div>
+            </div>
+          </div>
+          <div class="card-3-slide">
+            <div class="card-3-slide-content">
+              <p>
+                Caerphilly Accounting were very professional and created a
+                brilliant business plan for me from out discussions. They have
+                helped with the registration of my business researching a
+                community interest company and have given sound advice on
+                finances. I would highly recommend Caerphilly Accounting and
+                can't wait to do further business with them.
+              </p>
+              <div class="author">- Help4Wales Foundation</div>
+            </div>
+          </div>
+          <div class="card-3-slide">
+            <div class="card-3-slide-content">
+              <p>
+                Caerphilly Accounting assisted us in getting our taxes sorted -
+                they were full of knowledge and put our finances in order with
+                ease. They have always been accommodating with any questions and
+                have made a big difference to how we run our business. I
+                wouldn't think twice about recommending Caerphilly Accounting
+                and can't wait to work with them again.
+              </p>
+              <div class="author">- Big Lemon Creative</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-3-slider-nav">
+        <span onclick="moveCard3Slide(0)" class="active"></span>
+        <span onclick="moveCard3Slide(1)"></span>
+        <span onclick="moveCard3Slide(2)"></span>
+      </div>
+    </div>
+
+    <div class="card-4">
+      <div class="card-4-text">
+        <h2>ACCESSIBLE | RELIABLE | TRANSPARENT</h2>
+        <p>
+          At Caerphilly Accounting, we seamlessly blend traditional accounting
+          practices with cutting-edge cloud software solutions. Our approach
+          ensures that clients enjoy the full functionality of a modern
+          accounting firm while staying connected to us and their financial data
+          from anywhere, anytime.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-5">
+      <img src="WESITE IMAGES/FreeAgent.png" alt="FreeAgent" />
+      <img
+        src="https://placehold.co/200x100/0a0a0a/6ab04c?text=QuickFile"
+        alt="QuickFile"
+      />
+      <img src="WESITE IMAGES/XERO_BRONZE.png" alt="Xero" />
+      <img src="WESITE IMAGES/IRIS.png" alt="IRIS" />
+    </div>
+
+    <div class="card-6-outer">
+      <div class="card-6">
+        <div class="card-6-slider">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <a href="dataSecurity.html">
+              <img src="WESITE IMAGES/Data.jpg" alt="Data Security" />
+            </a>
+            <div class="slide-content">
+              <a href="dataSecurity.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="dataSecurity.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <a href="newTax.html">
+              <img src="WESITE IMAGES/new tax.jpg" alt="New Tax" />
+            </a>
+            <div class="slide-content">
+              <a href="newTax.html" class="slide-title">
+                New Tax and NIC rates, how will they affect you?
+              </a>
+              <p class="slide-date">November</p>
+              <a href="newTax.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <a href="dividendTax.html">
+              <img src="WESITE IMAGES/divident tax.jpg" alt="Dividend Tax" />
+            </a>
+            <div class="slide-content">
+              <a href="dividendTax.html" class="slide-title">
+                Dividend Tax! Owner-directors, are you informed?
+              </a>
+              <p class="slide-date">November</p>
+              <a href="dividendTax.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide">
+            <a href="makingTaxDigital.html">
+              <img
+                src="WESITE IMAGES/Making Tax.jpg"
+                alt="Making Tax Digital"
+              />
+            </a>
+            <div class="slide-content">
+              <a href="makingTaxDigital.html" class="slide-title">
+                Making Tax Digital
+              </a>
+              <p class="slide-date">November</p>
+              <a href="makingTaxDigital.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="slide">
+            <a href="theKey.html">
+              <img src="WESITE IMAGES/The Key.jpg" alt="The Key" />
+            </a>
+            <div class="slide-content">
+              <a href="theKey.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="theKey.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="slide">
+            <a href="consultation.html">
+              <img
+                src="WESITE IMAGES/consultation response.jpg"
+                alt="Consultation"
+              />
+            </a>
+            <div class="slide-content">
+              <a href="consultation.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="consultation.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="slide">
+            <a href="tougherPenalties.html">
+              <img
+                src="WESITE IMAGES/tougher penalties.jpg"
+                alt="Tougher Penalties"
+              />
+            </a>
+            <div class="slide-content">
+              <a href="tougherPenalties.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="tougherPenalties.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="slide">
+            <a href="brexit.html">
+              <img src="WESITE IMAGES/Brexit.jpg" alt="Brexit" />
+            </a>
+            <div class="slide-content">
+              <a href="brexit.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="brexit.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="slide">
+            <a href="autumnBudget.html">
+              <img src="WESITE IMAGES/Autumn Budget.jpg" alt="Autumn Budget" />
+            </a>
+            <div class="slide-content">
+              <a href="autumnBudget.html" class="slide-title">
+                Data Security, Data Storage & GDPR
+              </a>
+              <p class="slide-date">November</p>
+              <a href="autumnBudget.html" class="slide-button">READ MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="card-6-nav">
+          <button class="nav-button prev" onclick="moveCard6Slide(-1)">
+            ❮
+          </button>
+          <button class="nav-button next" onclick="moveCard6Slide(1)">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-7">
+      <img src="WESITE IMAGES/AAT.png" alt="AAT" />
+      <img
+        src="https://placehold.co/200x120/0a0a0a/6ab04c?text=FSB"
+        alt="FSB"
+      />
+      <img src="https://placehold.co/200x120/0a0a0a/6ab04c?text=HM" alt="HM" />
+      <img src="WESITE IMAGES/ICO.png" alt="ICO" />
+    </div>
+
+    <footer>
+      <div class="footer-card-1">
+        <div class="caBild">
+          <img src="WESITE IMAGES/LOGO_NAME.png" alt="" />
+        </div>
+        <p>Caerphilly Accounting <br />@ copyright 2016-2024</p>
+        <p>
+          Caerphilly Accounting is a trading name <br />of JJBS Bookkeeping
+          Solutions Ltd.
+        </p>
+        <p>Registered in England & Wales <br />Company Number: 9862331</p>
+      </div>
+      <div class="footer-card-2">
+        <h2>Registered Address</h2>
+        <div class="ra">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+            />
+          </svg>
+          <p>
+            32 Tridwr Road <br />Abertridwr <br />CAERPHILLY <br />Gwent
+            <br />CF83 4DN
+          </p>
+        </div>
+      </div>
+      <div class="footer-card-3">
+        <h2>Quick Links</h2>
+        <a href="privacyPolicy.html">Privacy Policy</a>
+        <a href="termsOfWebsiteUse.html">Terms Of Website Use</a>
+        <h2>Contact</h2>
+        <div class="phone">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+            />
+          </svg>
+          <p>07494 336569</p>
+        </div>
+        <div class="gmail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 14h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+          <p>info@caerphillyaccounting.co.uk</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="menudrop.js"></script>
+  </body>
+</html>
